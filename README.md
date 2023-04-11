@@ -1,5 +1,3 @@
-# 参考 https://juejin.cn/post/6844903823744434189
-
 ## 框架说明
 
 - [vue] https://cn.vuejs.org/
