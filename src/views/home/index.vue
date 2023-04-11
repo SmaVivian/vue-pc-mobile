@@ -1,10 +1,10 @@
 <template>
-  <div class="page-home" :class="{'mobile': $store.state.app.isMobile, 'pc': !$store.state.app.isMobile}">
-    <div class="wrap" v-if="!$store.state.app.isMobile">
+  <div class="page-home" :class="{'mobile': _isMobile, 'pc': !_isMobile}">
+    <div class="wrap" v-if="!_isMobile">
       <h1>首页 pc 端</h1>
     </div>
 
-    <div class="wrap mobile" v-if="$store.state.app.isMobile">
+    <div class="wrap mobile" v-if="_isMobile">
       <h1>首页 移动端 端</h1>
     </div>
   </div>

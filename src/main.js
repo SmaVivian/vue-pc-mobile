@@ -14,7 +14,9 @@ if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobi
 } else {
   isMobile = false
 }
-store.dispatch('TogglePlat', isMobile)
+// store.dispatch('TogglePlat', isMobile)
+Vue.prototype._isMobile = isMobile
+console.log(111, Vue.prototype._isMobile)
 
 Vue.use(ElementUI)
 Vue.prototype.$http = request
